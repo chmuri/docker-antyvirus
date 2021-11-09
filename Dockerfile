@@ -1,4 +1,5 @@
-FROM ubuntu:20.04ENV TZ="Europe/Warsaw"
+FROM ubuntu:20.04
+ENV TZ="Europe/Warsaw"
 ENV DEBIAN_FRONTEND="noninteractive"
 RUN ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 RUN apt update
